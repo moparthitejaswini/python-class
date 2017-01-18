@@ -149,6 +149,14 @@ print"the prime numbers of the list:",prime
 
 
 # In[ ]:
-
+## l2=[1,2,3,4,[6,7,8],[9,10]]
+a=[1,2,3,4,[6,7,8],[9,10]]
+a2=[]
+for i in a:
+    if type(i)==int:
+        a2.append(i)
+    elif type(i)==list:
+        a2.extend(i)
+print a2
 
 
