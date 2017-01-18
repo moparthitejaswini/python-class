@@ -119,13 +119,16 @@ else:
 #first 100 odd elements 
 num =range(1,1000)
 odd=[]
+odd2=[]
 for i in num:
     if i%2 == 1:
         odd.append(i)
-count=len(odd)
+count=0
 for j in odd:
+    count=count+1
     if count <=100:
-        print j
+        odd2.append(j)
+print "the first 100 odd numbers:",odd2
 
 
 # In[14]:
